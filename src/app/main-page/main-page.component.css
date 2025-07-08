@@ -1,0 +1,19 @@
+.splWidth {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.mainPage small {
+  font-weight: 500;
+}
+
+.models {
+  border: none;
+  border-top-right-radius: 5px;
+}
+
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #6c757d;
+  padding: 0 0.5rem;
+}

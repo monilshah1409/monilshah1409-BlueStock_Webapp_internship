@@ -1,0 +1,45 @@
+.pageWidth {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: #6c757d;
+  padding: 0 0.5rem;
+}
+
+.mobileImage {
+  height: 400px;
+  width: 350px;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .mobileImage {
+    height: 250px;
+    width: 200px;
+  }
+
+  .smallFont {
+    font-size: 14px;
+  }
+
+  .splTxt {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .splDiv {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .splBtn {
+    width: 75% !important;
+  }
+}

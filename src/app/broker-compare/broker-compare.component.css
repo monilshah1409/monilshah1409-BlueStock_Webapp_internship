@@ -1,0 +1,53 @@
+.card img {
+  width: 100px;
+  height: auto;
+}
+
+.content {
+  width: 70%;
+  margin-left: 15%;
+}
+
+th,
+td {
+  vertical-align: middle;
+}
+
+.table-primary {
+  color: white;
+}
+
+.brokerCharges {
+  height: auto;
+  width: 100%;
+}
+
+.brokerCharges img {
+  width: 100%;
+}
+
+.cardH1 {
+  height: 50px;
+  width: 50px;
+}
+
+@media (max-width: 768px) {
+  .card img {
+    width: 50px;
+    height: auto;
+  }
+
+  .dematBtn {
+    font-size: 10px;
+  }
+
+  .tables {
+    font-size: 10px;
+    padding: 0 !important;
+  }
+
+  .content {
+    width: 100%;
+    margin-left: 0%;
+  }
+}

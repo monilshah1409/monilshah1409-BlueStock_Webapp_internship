@@ -1,0 +1,42 @@
+.divImpo {
+  width: 100%;
+  max-width: 400px;
+  font-weight: 900px;
+}
+
+.boldImp {
+  font-weight: 600;
+  color: black;
+}
+
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+}
+
+input[type="checkbox"]:focus {
+  border-color: green !important;
+  outline: none !important;
+}
+
+.checkboxDiv {
+  font-size: 16px;
+}
+
+.smokeBg {
+  background-color: whitesmoke;
+}
+
+img {
+  height: 35px;
+}
+
+@media (max-width: 576px) {
+  img {
+    height: 30px;
+  }
+}
