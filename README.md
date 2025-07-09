@@ -100,4 +100,4 @@ The application will be accessible at: http://localhost:4200
 
 The frontend is deployed on Vercel .
 
-🔗 🔵 Bluestock Fintech – IPO Web Application
+🔗 🔵 https://blue-stock-webapp.vercel.app  
