@@ -47,5 +47,58 @@ This repository contains only the frontend implementation.
 
 📂 GitHub Repository:
 🟩 [View Project on GitHub](https://github.com/monilshah1409/monilshah1409-BlueStock_Webapp_internship)
-
 ## 📁 Project Directory Structure
+
+```
+bluestock-frontend/
+├── src/
+│   ├── app/
+│   │   ├── components/
+│   │   ├── services/
+│   ├── assets/
+│   │   ├── Github-Images/
+│   │   │   └── Preview-Image.png
+│   └── index.html
+├── angular.json
+├── package.json
+```
+
+## ⚙️ Getting Started
+
+### Configuration
+
+Copy the example environment configuration and replace placeholder values with your actual API endpoints:
+
+```typescript
+// environment.example.ts
+export const environment = {
+  production: false,
+  apiUrl: 'http://your-api-url.com',
+  googleSigninUrl: 'https://your-api-url.com/OAuth/account/google/login ',
+  googleSignupUrl: 'https://your-api-url.com/OAuth/account/google/signup '
+};
+```
+
+### Installation Steps
+
+**Clone the Repository**
+```bash
+git clone https://github.com/monilshah1409/monilshah1409-BlueStock_Webapp_internship.git 
+cd bluestock-frontend
+```
+
+**Install Dependencies**
+```bash
+npm install
+```
+
+**Run the Application Locally**
+```bash
+ng serve
+The application will be accessible at: http://localhost:4200
+
+## 🌍 Hosting Information
+
+The frontend is deployed on Vercel .
+
+🔗 🔵 https://blue-stock-webapp.vercel.app  
