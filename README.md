@@ -1,116 +1,116 @@
-<h1 align="center" style="color:#2c3e50;">💹 Bluestock Fintech</h1>
+💹 Bluestock Fintech – IPO Analytics Platform
 
-<p align="center">
-  <img src="./src/assets/Github-Images/Preview-Image.png" alt="Bluestock Preview" width="600"/>
-</p>
+<div align="center"> <img src="./src/assets/Github-Images/Preview-Image.png" alt="Bluestock Preview" width="600"/> </div>  <p align="center"> <strong>A modern, production-ready frontend application for Bluestock’s IPO analytics platform.</strong><br> Developed using Angular and Bootstrap, this solution provides real-time IPO insights, comprehensive tracking features, and secure document access. </p>  
+ 📄 Project Overview
 
-<p align="center">
-  <b>A sleek, production-ready frontend for Bluestock's IPO analytics platform.</b><br>
-  Built with Angular & Bootstrap, this app offers real-time IPO insights, tracking, and document access.
-</p>
+Bluestock is a professionally developed frontend web application designed for Bluestock Fintech to deliver actionable IPO data through an intuitive and responsive interface. The application serves as the foundation for both internal dashboards and client-facing platforms, offering structured and insightful initial public offering analytics.
 
----
+ 🌟 Key Features
 
-## 📄 About the Project
+📊 Detailed IPO Listings
+Presents essential IPO information including company logo, name, price band, issue type and size, key dates, listing gains, and current status.
+📈 Live Market Metrics
+Displays dynamic financial indicators such as IPO price, listing price, current market price (CMP), and automatically calculated returns.
+📎 Downloadable Documentation
+Provides direct access to regulatory documents like RHP and DRHP in PDF format for each IPO.
+💻 Responsive User Interface
+Fully optimized for seamless user experience across desktop and mobile devices.
+🌐 Integration-Friendly Design
+Built with embeddability in mind, enabling easy integration into third-party applications and platforms.
+ 🛠️ Technology Stack
 
-Bluestock is a production-level frontend application built for Bluestock Fintech.  
-It displays IPO data in a clean, responsive interface — helping investors track public offerings.  
-This app powers both our platform and client dashboards with structured IPO insights.
+This repository contains only the frontend implementation. 
 
----
+ Framework: Angular (utilizing standalone components)
+Styling: Bootstrap 5
+Icons & Assets: Bootstrap Icons and custom graphic assets
+Backend Integration: Integrated with Bluestock's secure RESTful API
+ 🚀 Live Deployment
 
-## 🌟 Features
+🔗 Application URL:
+🔵 View Live Application on Vercel
 
-- 📊 **Detailed IPO Listings**  
-  Company logo, name, price band, issue type and size, key dates, listing gains & status.
+ 🐱 Source Code Repository
 
-- 📈 **Live Market Metrics**  
-  IPO price, listing price, current CMP, and auto-calculated returns.
+📂 GitHub Repository:
+🟩 View Project on GitHub
 
-- 📎 **Downloadable Documents**  
-  Instant access to RHP and DRHP PDFs for every IPO.
+ 📁 Project Directory Structure
 
-- 💻 **Responsive UI**  
-  Fully optimized for both desktop and mobile screens.
 
-- 🌐 **Easy Embeds for Clients**  
-  Designed for integration into third-party apps and platforms.
 
----
-
-## 🛠️ Tech Stack
-
-> This repository contains the **frontend only**.
-
-- 🎯 **Framework:** Angular (standalone components)
-- 🎨 **Styling:** Bootstrap 5
-- 🧩 **Icons & Assets:** Bootstrap Icons, Custom Assets
-- 🔗 **API:** Connected to Bluestock’s secure REST API
-
----
-
-## 🚀 Live Demo
-
-🌐 **App Link:**  
-[🔗 Bluestock-Fintech.app](https://bluestock-fintech-phi.vercel.app/)
-
----
-
-## 📁 Project Structure
-```bash
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
 bluestock-frontend/
 ├── src/
-│ ├── app/
-│ │ ├── components/
-│ │ ├── services/
-│ ├── assets/
-│ │ ├── Github-Images/
-│ │ │ └── Preview-Image.png
-│ └── index.html
+│   ├── app/
+│   │   ├── components/
+│   │   ├── services/
+│   ├── assets/
+│   │   ├── Github-Images/
+│   │   │   └── Preview-Image.png
+│   └── index.html
 ├── angular.json
 ├── package.json
-```
----
+ ⚙️ Getting Started
 
-## ⚙️ Getting Started
+Configuration
 
-```bash
+Copy the example environment configuration and replace placeholder values with your actual API endpoints:
+
+ts
+
+
+1
+2
+3
+4
+5
+6
+7
+⌄
 // environment.example.ts
 export const environment = {
   production: false,
   apiUrl: 'http://your-api-url.com',
-  googleSigninUrl: 'https://your-api-url.com/OAuth/account/google/login',
-  googleSignupUrl: 'https://your-api-url.com/OAuth/account/google/signup',
-  recaptchaSiteKey: 'YOUR_RECAPTCHA_SITE_KEY'
+  googleSigninUrl: 'https://your-api-url.com/OAuth/account/google/login ',
+  googleSignupUrl: 'https://your-api-url.com/OAuth/account/google/signup '
 };
-```
+Installation Steps
 
-### 1️⃣ Clone the Repository
+Clone the Repository
+ bash
 
-```bash
-git clone https://github.com/rockyhans/Bluestock-Fintech.git
-```
-```bash
+
+1
+2
+git clone https://github.com/monilshah1409/monilshah1409-BlueStock_Webapp_internship.git 
 cd bluestock-frontend
-```
+Install Dependencies
+ bash
 
-  
-2️⃣ Install Dependencies
-```bash 
+
+1
 npm install
-```
+Run the Application Locally
+ bash
 
-3️⃣ Run Locally
-```bash
+
+1
 ng serve
-```
-App will be running at: http://localhost:4200
+The application will be accessible at: http://localhost:4200
 
+ 🌍 Hosting Information
 
-### 🌍 Hosting Info
-The frontend is hosted on Vercel
-- [[ Bluestock Fintech - IPO Web Application](https://bluestock-fintech-phi.vercel.app/)]
+The frontend is deployed on Vercel .
 
-
-
-
+🔗 🔵 Bluestock Fintech – IPO Web Application

@@ -1,8 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { AuthService } from '../Service/auth.service';
-import { IpoService } from '../Service/ipo.service';
+import { IpoService, Ipo } from '../Service/ipo.service';
 
 @Component({
   selector: 'app-ipo-info',
@@ -11,15 +11,15 @@ import { IpoService } from '../Service/ipo.service';
   templateUrl: './ipo-info.component.html',
   styleUrls: ['./ipo-info.component.css'],
 })
-export class IpoInfoComponent {
+export class IpoInfoComponent implements OnInit {
   credentials: any = {
     companyName: '',
     prizeBand: '',
-    open: '',
-    close: '',
+    open: '2026-07-10',
+    close: '2026-07-20',
     issueSize: '',
     issueType: '',
-    listingDate: '',
+    listingDate: '2026-07-25',
     status: 'Upcoming',
     ipoPrice: '',
     listingPrice: '',
@@ -29,6 +29,7 @@ export class IpoInfoComponent {
     rhp: '',
     drhp: '',
     companyLogo: null,
+    newListingDate: '2026-07-25',
   };
 
   selectedComponent: string = 'ipoInfo';
@@ -36,6 +37,24 @@ export class IpoInfoComponent {
 
   ipoService = inject(IpoService); // Inject the IPO service
   authService = inject(AuthService); // Inject the AuthService
+
+  ipos: Ipo[] = [];
+
+  ngOnInit() {
+    this.loadIpos();
+  }
+
+  loadIpos() {
+    this.ipoService.getIpos().subscribe((data) => {
+      // Override dates with latest dates
+      this.ipos = data.map((ipo) => ({
+        ...ipo,
+        open: '2026-07-10',
+        close: '2026-07-20',
+        listingDate: '2026-07-25',
+      }));
+    });
+  }
 
   // Verify session before registering IPO
   verifySession() {
@@ -117,5 +136,51 @@ export class IpoInfoComponent {
 
   deleteLogo() {
     this.credentials.companyLogo = null;
+  }
+
+  subscriptions: any[] = [
+    {
+      companyName: 'Adani Power',
+      priceBand: '₹ 329 - 136',
+      open: '2026-07-10',
+      close: '2026-07-20',
+      issueSize: '45530.15 Cr.',
+      issueType: 'Book Built',
+      listingDate: '2026-07-25',
+      status: 'Ongoing',
+    },
+    {
+      companyName: 'VBL LTD',
+      priceBand: '₹ 229 - 136',
+      open: '2026-07-10',
+      close: '2026-07-20',
+      issueSize: '1330.15 Cr.',
+      issueType: 'Book Built',
+      listingDate: '2026-07-25',
+      status: 'Coming',
+    },
+  ];
+
+  allotments: any[] = [
+    {
+      companyName: 'Tata Motor',
+      priceBand: '₹ 12549 - 136',
+      open: '2026-07-10',
+      close: '2026-07-20',
+      issueSize: '1340.15 Cr.',
+      issueType: 'Book Built',
+      listingDate: '2026-07-25',
+      status: 'New Listed',
+    },
+  ];
+
+  // Dummy subscription method
+  subscribeIPO() {
+    alert('IPO Subscription successful (dummy)');
+  }
+
+  // Dummy allotment method
+  allotIPO() {
+    alert('IPO Allotment successful (dummy)');
   }
 }

@@ -35,18 +35,16 @@ export class AppHomePageComponent {
   club = ['Educational Resources', 'Real-time Chat', 'Forums'];
   testimonials = [
     {
-      name: 'Venkatesh',
-      feedback: `Excellent app with a fantastic UI! 🤩 Even though the app is still in progressive mode,
-      I must say it is getting better every day. It has an amazing user interface.`,
+      name: 'Monil',
+      feedback: `BlueStock has transformed my trading experience! The insights are invaluable, and the platform is incredibly intuitive. Highly recommend for serious traders.`,
     },
     {
-      name: 'Sarthak',
-      feedback: `Bluestock app provides a user-friendly interface 🧭 The clean design and intuitive navigation enhance the overall experience.`,
+      name: 'Parth',
+      feedback: `I've tried many trading apps, but BlueStock stands out. The real-time data and analytical tools are top-notch, helping me make informed decisions.`,
     },
     {
-      name: 'Sakshi',
-      feedback: `BlueStock for chart learning & technical and it has exceeded my expectations.
-      The UI is well-designed, making it a breeze to navigate and learn charts.`,
+      name: 'Sujal',
+      feedback: `The community feature on BlueStock is a game-changer. I can connect with other investors, share ideas, and learn from the best. Fantastic platform!`,
     },
   ];
 

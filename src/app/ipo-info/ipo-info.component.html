@@ -1,4 +1,4 @@
-<!-- IPO Form Section -->
+ <!-- IPO Form Section -->
 <div class="overflow-auto mainBar p-4">
   <div class="overflow-auto">
     <div class="container-fluid">
@@ -13,6 +13,12 @@
           </button>
           <button class="btn btn-outline-primary border-2" (click)="cancel()">
             Cancel
+          </button>
+          <button class="btn btn-success ms-2" (click)="subscribeIPO()">
+            Subscribe
+          </button>
+          <button class="btn btn-warning ms-2" (click)="allotIPO()">
+            Allot
           </button>
         </div>
       </div>
@@ -89,6 +95,84 @@
               </div>
             </div>
 
+            <!-- Dummy IPO Subscription Section -->
+            <div class="mt-4">
+              <h5>IPO Subscriptions (Dummy Data)</h5>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Price Band</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                    <th>Issue Size</th>
+                    <th>Issue Type</th>
+                    <th>Listing Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    <th>Delete/View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let sub of subscriptions">
+                    <td>{{ sub.companyName }}</td>
+                    <td>{{ sub.priceBand }}</td>
+                    <td>{{ sub.open }}</td>
+                    <td>{{ sub.close }}</td>
+                    <td>{{ sub.issueSize }}</td>
+                    <td>{{ sub.issueType }}</td>
+                    <td>{{ sub.listingDate }}</td>
+                    <td>{{ sub.status }}</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Action</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                      <button class="btn btn-info btn-sm ms-1">View</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Dummy IPO Allotment Section -->
+            <div class="mt-4">
+              <h5>IPO Allotments (Dummy Data)</h5>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Company</th>
+                    <th>Price Band</th>
+                    <th>Open</th>
+                    <th>Close</th>
+                    <th>Issue Size</th>
+                    <th>Issue Type</th>
+                    <th>Listing Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                    <th>Delete/View</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let allot of allotments">
+                    <td>{{ allot.companyName }}</td>
+                    <td>{{ allot.priceBand }}</td>
+                    <td>{{ allot.open }}</td>
+                    <td>{{ allot.close }}</td>
+                    <td>{{ allot.issueSize }}</td>
+                    <td>{{ allot.issueType }}</td>
+                    <td>{{ allot.listingDate }}</td>
+                    <td>{{ allot.status }}</td>
+                    <td>
+                      <button class="btn btn-primary btn-sm">Action</button>
+                    </td>
+                    <td>
+                      <button class="btn btn-danger btn-sm">Delete</button>
+                      <button class="btn btn-info btn-sm ms-1">View</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             <div class="row g-3 mt-2">
               <div class="col-md-6 d-flex flex-column gap-2">
                 <label>Company Name</label>
