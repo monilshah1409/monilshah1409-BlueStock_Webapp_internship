@@ -1,6 +1,6 @@
 💹 Bluestock Fintech – IPO Analytics Platform
 
-<div align="center"> <img src="./src/assets/Github-Images/Preview-Image.png" alt="Bluestock Preview" width="600"/> </div>  <p align="center"> <strong>A modern, production-ready frontend application for Bluestock’s IPO analytics platform.</strong><br> Developed using Angular and Bootstrap, this solution provides real-time IPO insights, comprehensive tracking features, and secure document access. </p>  
+<div align="center"> <img src="./src/assets/Github-Images/Preview-Image.png" alt="Bluestock Preview" width="600"/> </div>  <p align="center"> <strong>A modern, production-ready frontend application for Bluestock's IPO analytics platform.</strong><br> Developed using Angular and Bootstrap, this solution provides real-time IPO insights, comprehensive tracking features, and secure document access. </p>  
 
 ## 📖 Table of Contents
 - [📄 Project Overview](#-project-overview)
@@ -28,76 +28,24 @@ Provides direct access to regulatory documents like RHP and DRHP in PDF format f
 Fully optimized for seamless user experience across desktop and mobile devices.
 - 🌐 **Integration-Friendly Design**
 Built with embeddability in mind, enabling easy integration into third-party applications and platforms.
+
 ## 🛠️ Technology Stack
 
 This repository contains only the frontend implementation. 
 
- Framework: Angular (utilizing standalone components)
-Styling: Bootstrap 5
-Icons & Assets: Bootstrap Icons and custom graphic assets
-Backend Integration: Integrated with Bluestock's secure RESTful API
+- Framework: Angular (utilizing standalone components)
+- Styling: Bootstrap 5
+- Icons & Assets: Bootstrap Icons and custom graphic assets
+- Backend Integration: Integrated with Bluestock's secure RESTful API
+
 ## 🚀 Live Deployment
 
 🔗 Application URL:
-🔵 View Live Application on Vercel
+🔵 [View Live Application](https://blue-stock-webapp.vercel.app)
 
 ## 🐱 Source Code Repository
 
 📂 GitHub Repository:
-🟩 View Project on GitHub
+🟩 [View Project on GitHub](https://github.com/monilshah1409/monilshah1409-BlueStock_Webapp_internship)
 
 ## 📁 Project Directory Structure
-
-```
-bluestock-frontend/
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   ├── services/
-│   ├── assets/
-│   │   ├── Github-Images/
-│   │   │   └── Preview-Image.png
-│   └── index.html
-├── angular.json
-├── package.json
-```
-
-## ⚙️ Getting Started
-
-### Configuration
-
-Copy the example environment configuration and replace placeholder values with your actual API endpoints:
-
-```typescript
-// environment.example.ts
-export const environment = {
-  production: false,
-  apiUrl: 'http://your-api-url.com',
-  googleSigninUrl: 'https://your-api-url.com/OAuth/account/google/login ',
-  googleSignupUrl: 'https://your-api-url.com/OAuth/account/google/signup '
-};
-```
-
-### Installation Steps
-
-**Clone the Repository**
-```bash
-git clone https://github.com/monilshah1409/monilshah1409-BlueStock_Webapp_internship.git 
-cd bluestock-frontend
-```
-
-**Install Dependencies**
-```bash
-npm install
-```
-
-**Run the Application Locally**
-```bash
-ng serve
-The application will be accessible at: http://localhost:4200
-
-## 🌍 Hosting Information
-
-The frontend is deployed on Vercel .
-
-🔗 🔵 https://blue-stock-webapp.vercel.app  
